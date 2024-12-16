@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
@@ -7,19 +6,163 @@
   <!-- <meta name="author" content="Vincent Garreau" /> -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <link rel="stylesheet" media="screen" href="css/style.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
 </head>
 <body>
 
 <nav id="Navig">
-  <div style="width: 830px; margin: auto;">
-    <button class="Acc_But Mode">ACCUEIL</button>
-    <button class="Acc_But">A PROPOS</button>
-    <button class="Acc_But">COMPETENCES</button>
-    <button class="Acc_But">EXPERIENCES</button>
-    <button class="Acc_But">PARCOURS</button>
-    <button class="Acc_But">PROJET</button>
+  <div class="Nav_left">
+    <a class="Activ Acc_But" id="Acc">PORTFOLIO</a>
+  </div>
+  <div class="Nav_Right">
+    <a class="Acc_But" id="Prop">A PROPOS</a>
+    <a class="Acc_But" id="Comp">COMPETENCES</a>
+    <a class="Acc_But" id="Proj">PROJET</a>
+    <a class="Acc_But" id="Cont">CONTACT</a>
+    <img class="Nav-Glb" src="src/globe.gif">
+    <p id="lang">FR</p>
+    <a><img class="Nav-drop-down" src="src/Double_Fleche.png"></a>
   </div>
 </nav>
+
+<section id="Part_Prop" class="clair">
+  <div style="padding-top: 15vh;">
+      <h1 class="Title Prop">À PROPOS DE </h1>
+      <h1 class="Title Prop-Bis">MOI</h1>
+  </div>
+  <div id="Prop-Descr">
+    <p>
+      Bonjour futurs employeurs, je m’appelle LEBON Nina, 
+      j’ai 20 ans et je suis étudiante en deuxième année de 
+      BUT Réseaux et Télécommunications. J’ai découvert ce cursus 
+      après mon Bac, et il m’a tout de suite plu, ce qui m’a donné 
+      envie de devenir experte en cybersécurité, un domaine en plein 
+      essor et qui offre de nombreuses opportunités. Lors de cette 
+      formation, j’ai eu l’occasion d’acquérir des compétences 
+      techniques qui me seront utiles en entreprise, et peut-être 
+      dans la vôtre. N’hésitez pas à consulter les différents onglets 
+      de mon portfolio pour en apprendre davantage sur moi et sur 
+      mes projets. 
+    </p>
+  </div>
+  <div>
+    <a href="src/CV.pdf" id="CV-Button">CV</a>
+  </div>
+</section>
+
+<section id="Part_Comp" class="clair">
+  <nav>
+    <h1 class="Title Comp">MES</h1>
+    <h1 class="Title Comp-Bis">COMPETENCES</h1>
+  </nav>
+  <article id="AllCompButt">
+    <div id="Comp-Butt" class="Comp-Line">
+      <span>
+        <button id="Comp-Surv-Butt"><i class='bx bxs-show'></i></button>
+        <h1>Surveiller</h1>
+      </span>
+      <span>
+        <button id="Comp-Admi-Butt"><i class='bx bxs-cog'></i></button>
+        <h1>Administrer</h1>
+      </span>
+      <span>
+        <button id="Comp-Conn-Butt" style="line-height: 18vh;"><i class='bx bx-signal-5'></i></button>
+        <h1>Connecter</h1>
+      </span>
+    </div>
+    <div class="Comp-Line-Bis">
+      <span>
+        <button id="Comp-Secu-Butt"><i class='bx bx-check-shield'></i></button>
+        <h1>Securiser</h1>
+      </span>
+      <span>
+        <button id="Comp-Prog-Butt"><i class='bx bx-code-alt'></i></button>
+        <h1>Programer</h1>
+      </span>
+    </div>
+  </article>
+  <article id="Part_Surv"></article>
+  <article id="Part_Admi"></article>
+  <article id="Part_Conn"></article>
+  <article id="Part_Secu"></article>
+  <article id="Part_Prog"></article>
+</section>
+
+
+<section id="Part_Parc">
+  <div class="test">Partie Parcours</div>
+</section>
+
+<section id="Part_Proj" class="clair">
+  <nav>
+    <h1 class="Title Proj">MES</h1>
+    <h1 class="Title Proj-Bis">PROJETS</h1>
+  </nav>
+  <article id="PartProj_1"></article>
+  <article id="PartProj_2"></article>
+  <article id="PartProj_3"></article>
+  <article id="ProjList">
+    <div class="ProjLine">
+      <div class="ProjCont">
+        <img src="src/Proj/Crypto.png">
+        <button class="MoreButt" id="ButtProj_1">
+          <span>
+            <h1 style="font-size: 130%;">CRYPTOGRAPHIE</h1>
+            <h2>Cybersécurité</h2>
+          </span>
+          <p><i class='bx bx-plus'></i></p>
+        </button>
+      </div>
+      <div class="ProjCont">
+        <img src="src/Proj/Morpion.png">
+        <button class="MoreButt" id="ButtProj_2">
+          <span>
+            <h1 style="font-size: 130%;">MORPION</h1>
+            <h2>Dévellopement</h2>
+          </span>
+          <p><i class='bx bx-plus'></i></p>
+        </button>
+      </div>
+      <div class="ProjCont">
+        <img src="src/Proj/Vuln.png">
+        <button class="MoreButt" id="ButtProj_3">
+          <span>
+            <h1 style="font-size: 130%;">SCANNE DE VULNERABILITES</h1>
+            <h2>Hacking Ethique</h2>
+          </span>
+          <p><i class='bx bx-plus'></i></p>
+        </button>
+      </div>
+    </div>
+    <button id="AllProject">TOUS MES PROJETS</button>
+  </article>
+</section>
+
+<section id="Part_Cont" class="clair">
+  <nav>
+    <h1 class="Title Cont">CONTACTER</h1>
+    <h1 class="Title Cont-Bis">MOI</h1>
+  </nav>
+  <article>
+    <div class="Cont-net">
+      <span><img src="src/Image.jpg"></span>
+      <span><img src="src/Image.jpg"></span>
+      <span><img src="src/Image.jpg"></span>
+    </div>
+    <div class="Cont-main">
+      <form action="" method="get" class="ContFrom">
+        <div class="Contact">
+          <input type="email" name="email" class="ContFromIn" id="email" placeholder="Mail" required autocomplete="off" />
+          <input type="text" name="Objet" class="ContFromIn" id="Objet" placeholder="Objet" required autocomplete="off" />
+          <input type="text" name="Message" class="ContFromIn" id="Message" placeholder="Message" required autocomplete="off" />
+          <input type="submit" value="Envoyer" id="Envoyer"/>
+        </div>
+      </form>
+    </div>
+  </article>
+  <div></div>
+</section>
 
 <!-- count particles -->
 <!-- <div class="count-particles">
@@ -27,7 +170,18 @@
 </div> -->
 
 <!-- particles.js container -->
-<div id="particles-js"></div>
+<div id="particles-js">
+  <section id="Part_Acc">
+    <div>
+      LEBON Nina
+    </div>
+    <span></span>
+    <div>
+      <span>Étudiante en  </span>
+      <span class="AccPres">BUT Réseau & télécom</span>
+    </div>
+  </section>
+</div>
 
 <!-- scripts -->
 <script src="js/particles.js"></script>
